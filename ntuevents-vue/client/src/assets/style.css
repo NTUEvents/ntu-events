@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+/* Basic styling */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1.12em;
+}
+h5 {
+  font-size: 0.83em;
+}
+h6 {
+  font-size: 0.75em;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  word-break: break-all;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  color: #303030;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #07889b !important;
+  min-height: 70px !important;
+}
+
+.navbar .navbar-brand,
+.nav-item a,
+ul,
+li,
+.dropdown a,
+.dropdown p {
+  font-family: "Roboto Mono", monospace !important;
+}
+
+.navbar .navbar-brand:hover {
+  color: #70d590 !important;
+}
+
+.active {
+  color: #ffffff !important;
+}
+
+.dropdownMenu {
+  width: auto;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dropdown p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.dropdown a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+.dropdown a:hover {
+  color: #ffffff !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 250, 0.35), rgba(125, 250, 250, 0.55)),
+    url("../assets/jumbotron.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 0 !important;
+  color: white !important;
+  height: 60vh;
+}
+
+.caption {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em !important;
+  padding: 1em;
+}
+
+.caption h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  /* calc font size to fit all */
+  font-size: calc(2vw + 3vh);
+  color: white;
+}
+
+.caption p {
+  /* calc font size to fit all */
+  font-size: calc(1vw + 0.85vh) !important;
+  color: white;
+}
+
+.caption-head {
+  padding-top: 30px;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 22px !important;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.btn-outline-primary {
+  border-color: white !important;
+  color: white !important;
+  background-color: transparent;
+  margin-top: 30px;
+  font-weight: 200 !important;
+}
+
+.btn-outline-primary:hover {
+  border-color: transparent !important;
+  color: black !important;
+  background-color: white !important;
+}
+
+.btn-outline-primary:active {
+  border-color: transparent !important;
+  color: black !important;
+  background-color: white !important;
+  padding: 9px 20px 9px 20px;
+}
+
+/* Event title */
+.upcoming-title h2 {
+  margin-top: 40px;
+  padding: 10px;
+  padding-bottom: 0;
+  font-weight: 300 !important;
+}
+
+.title-divider {
+  border: none;
+  height: 4px;
+  background-color: #fd8f3b;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  width: 235px;
+}
+
+/* Event list */
+.event-item {
+  margin-bottom: 20px;
+}
+
+.eventlist {
+  margin-top: 10px;
+  margin-left: 20px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Back-to-top button */
+.back-to-top {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 80px !important;
+  right: 50px !important;
+  border-radius: 50% !important;
+  border-color: #f3696c !important;
+  background-color: #f3696c !important;
+}
+
+/* Progress bar */
+#nprogress .bar {
+  height: 4px !important;
+  background: #27c4f5
+    linear-gradient(to right, #27c4f5, #a307ba, #fd8d32, #70c050, #27c4f5) !important;
+  background-size: 500% !important;
+  animation: 2s linear infinite barprogress, 0.3s fadein !important;
+  width: 100% !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+}
+
+@keyframes barprogress {
+  0% {
+    background-position: 0% 0 !important;
+  }
+  to {
+    background-position: 125% 0 !important;
+  }
+}
+
+/* Copyright */
+.main .sticky-footer {
+  position: relative;
+}
+
+.sticky-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright {
+  font-family: "Roboto Mono", monospace !important;
+  background: #07889b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(rgba(0, 0, 250, 0.35), rgba(125, 250, 250, 0.55)),
+    url("../assets/jumbotron.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 30vh;
+}
+
+.poster h4,
+.poster p {
+  color: white;
+  font-size: 24px !important;
+  font-weight: 200 !important;
+}
+
+/* Poster page styling */
+.poster-link {
+  padding: 15px;
+  height: 150px;
+  width: 100% !important;
+  background-color: #18a2b8 !important;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login/Register page */
+.login .container,
+.register .container {
+  /* Set container height to 100% & remove the 80px (navbar + footer) */
+  min-height: 100% !important;
+  height: calc(100vh - 140px) !important;
+}
+
+.centerbox {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+/* Alerts */
+#error-alert {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  /* 100% width of alert box minus off 40px margin stated above*/
+  width: calc(100% - 40px);
+}
+
+/* All sub pages styling */
+/* Header stylings */
+.masthead {
+  height: 30vh;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  );
+}
+
+.masthead-title {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  flex-direction:column;
+}
+
+.masthead-title h1 {
+  color: white;
+  font-weight: 200 !important;
+  font-family: "Kaushan Script", cursive;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+.masthead-title p{
+  margin-top:20px;
+  color: white;
+  font-size: calc(1vw + 0.85vh) !important;
+  font-weight: 200 !important;
+  font-family: "Kaushan Script";
+}
+
+.evt-bgcolor {
+  background-color: #17a2b8;
+}
+
+/* poster page */
+.poster-image {
+  min-width: 250px !important;
+  min-height: 350px !important;
+  max-width: 250px !important;
+  max-height: 350px !important;
+}
+
+.poster-grid{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.back-to-top {
+  bottom: 40px !important;
+  right: 20px !important;
+}
+
+.copyright {
+  padding: 10px !important;
+  font-size: 12px;
+}
+
+/* login / Registration form */
+#button-spacing {
+margin-right: 5px;
+}
+
+#ccaList {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+overflow-y: scroll;
+height: 300px;
+padding-left: 3px;
+}
+
+#ccas {
+flex-grow: 1;
+}
+
+#error-alert {
+margin-top: 15px;
+}
+
+/* contact form */
+.contact .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactform {
+  margin-top:20px !important;
+  margin-bottom:60px; 
+} 
+
+/* Styling fix for favourites & navbar in mobile devices */
+@media (max-width: 576px) {
+  .navbar-nav > a,
+  .navbar-nav label {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 10.5px !important;
+    padding-bottom: 10.5px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster{
+    /* remove background image for poster in mobile form */
+    background: #457fca !important;  /* fallback for old browsers */ 
+    background: -webkit-linear-gradient(to top, #5691c8, #457fca) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #5691c8, #457fca) !important; 
+  }
+
+  .favourites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .favourites a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 50%;
+    color: red;
+    height: 50px;
+    width: 50px;
+    text-decoration: none !important;
+  }
+
+  .eventinfo {
+    margin-top: 30px;
+  }
+
+  .eventlist {
+    margin-left: -10px !important;
+  }
+}

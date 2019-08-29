@@ -1,0 +1,144 @@
+body {
+  color: #404e67 !important;
+  background: #f5f7fa !important;
+}
+
+.table {
+  font-size: 16px !important;
+  width: 100%;
+  border-color: #1d96b2;
+  margin-bottom: 80px !important;
+}
+
+.table-title {
+  margin-top: 50px;
+}
+
+.table-title h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.table thead th {
+  background-color: #1d96b2;
+  border: 1px solid #1d96b2;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+
+.table-title .add-new {
+  float: right;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: none;
+  min-width: 100px;
+  border-radius: 50px;
+  line-height: 13px;
+}
+
+.table-title .add-new i {
+  margin-right: 4px;
+}
+
+table.table tr th,
+table.table tr td {
+  border-color: #1d96b2;
+}
+
+table.table td a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table.table td a.edit {
+  color: #ffc107;
+}
+
+table.table td a.delete {
+  color: #e34724;
+}
+
+/* button design */
+.add-new {
+  float: right;
+  height: 40px !important;
+  width: 120px !important;
+  font-weight: 200 !important;
+  font-size: 16px !important;
+  text-shadow: none;
+  border-radius: 50px;
+  line-height: 10px;
+  margin-bottom: 20px !important;
+}
+
+/* override style.css hr */
+.dashboard .title-divider {
+  margin-left: 0px;
+  margin-top: -15px;
+  width: 130px;
+}
+
+/* resize container */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Force table to not be like tables anymore */
+  #dash table,
+  #dash thead,
+  #dash tbody,
+  #dash th,
+  #dash td,
+  #dash tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #dash thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #dash tr {
+    border: 1px solid #1d96b2;
+    margin-bottom:30px !important;
+  }
+
+  #dash td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #1d96b2;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    font-size: 12px;
+    overflow-wrap: break-word;
+  }
+
+  #dash td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  /* Label the data */
+  #dash td:before {
+    content: attr(data-title);
+  }
+}
