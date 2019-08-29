@@ -6,8 +6,6 @@
 
 If a student wishes to find out about a CCA's upcoming events, he has to visit the [official CCA directory page](https://www.ntu.edu.sg/CampusLife/Clubs/pages/clubssocieties.aspx) first, before entering the CCA's website. This is a time-consuming process which severely limits student awareness and participation.
 
-![alt text](https://github.com/JiaweiTan/NTU-Events-Website/blob/master/NTUCCas.PNG)
-
 **Solution**
 
 By aggregating all CCA events in one site, NTUEvents serves as a convenient platform for students to get the latest updates on upcoming activities. In turn, CCAs can reach a wider student audience.
@@ -24,61 +22,9 @@ To display the views, we use Vue.Js as our front-end framework.
 
 To set up our api backend, we use Nodejs with express
 
-### Getting Started
+### Want to be a part of our team?
 
-#### Installing node_modules
-
-Go into the client folder and enter:
-
-```
-npm install
-```
-
-Return to the root directory of ntuevents-vue and enter:
-
-```
-npm install
-```
-
-#### How to run?
-
-For client, go into the client folder and run this command
-
-```
-npm run serve
-```
-
-For nodejs express, run this command at the root directory
-
-```
-npm run dev
-```
-
-### Prerequisites
-
-#### Code Editor
-
-- [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows)
-
-#### Package Management
-
-- [Node.js](https://nodejs.org/en/download/)
-
-#### Database
-
-- [Mongodb](https://https://www.mongodb.com/)
-
-#### Web Frameworks
-
-- [Vue CLI 3](https://cli.vuejs.org/guide/installation.html)
-
-### Setup
-
-Step 1: Install the software in "Prerequisites" section
-
-Step 2: Read "Getting Started" section
-
-Step 3: Fork repository
+- Feel free to email us at ntuevents@gmail.com. 
 
 ## Built With
 
@@ -104,6 +50,9 @@ Step 3: Fork repository
 - Christopher Chew
 - [Jay Gupta](https://github.com/guptajay)
 - [Bak Zhee Shuen](https://github.com/bakzs)
+- [Clarence](https://github.com/clarencecastillo)
+- [Zayn](https://github.com/ZaynJarvis)
+- [Jarrett](https://github.com/jarrettyeo)
 
 ## License
 
